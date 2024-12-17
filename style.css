@@ -1,0 +1,518 @@
+body{
+    background-color: #3a3c26;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container2{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header{
+    text-align: center;
+    padding-top: 20px;
+}
+h1 img{
+    height: 80px;
+    width: auto;
+}
+nav{
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+}
+.navhead{
+    font-family: "Roboto", sans-serif;
+}
+.navbutton .navhead:hover{
+    color: burlywood;
+}
+.navbutton{
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    padding-top: 20px;
+    padding-left: 20px;
+    margin-right: 50px;
+}
+.mobwrapper{
+    display: none;
+}
+.mobnavhead{
+    display: none;
+    font-family: "Roboto", sans-serif;
+}
+.mobnav{
+    display: flex;
+    justify-content: center;
+}
+.dropdownmenu{
+    display: none;
+    position: absolute;
+    z-index: 99;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    margin-left: -10px;
+}
+.navbutton:hover .dropdownmenu{
+    display: block;
+}
+.dropdownmenu .navbutton{
+    background-color: #9ba15d;
+}
+
+.dropdownmenu .navbutton:hover{
+    background-color:brown;
+}
+.mobnavbutton:hover .dropdownmenu{
+    display: block;
+}
+.dropdownmenu .mobnavbutton{
+    background-color: #9ba15d;
+}
+
+.dropdownmenu .mobnavbutton:hover{
+    background-color:brown;
+}
+.button1{
+    font-family: "Noto Serif HK", serif;
+    text-align: center;
+    text-wrap: nowrap;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.button2{
+    font-family: "Noto Serif KR", serif;
+    text-align: center;
+    padding-left: 42px;
+    padding-right: 42px;
+    text-wrap: nowrap;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.button3{
+    font-family: "Noto Serif HK", serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+hr {
+    border: none;
+    border-top: 3px solid whitesmoke;
+    margin: 20px 0;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+main{
+    width: 100%;
+    display: flex;
+}
+.myphoto img{
+    flex: 1;
+    height: 300px;
+    width: auto;
+    padding-top: 5px;
+}
+.myphoto4mobile{
+    display: none;
+    justify-content: center;
+    padding-top: 10px;
+}
+.myname{
+    display: flex;
+    flex-direction: row;
+}
+.big{
+    padding-left: 10px;
+}
+h2{
+    font-family: "Noto Serif HK", serif;
+    font-size: 4rem;
+    color: aliceblue;
+}
+.small{
+    padding-top: 6px;
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
+}
+h3{
+    color: aliceblue;
+    font-size: 1.75rem;
+    font-family: "Noto Serif KR", serif;
+}
+h4{
+    color: aliceblue;
+    font-size: 1.75rem;
+    font-family: "Noto Serif HK", serif;
+    padding-top: 5px;
+}
+.icon2{
+    padding-left: 40px;
+    padding-top: 16px;
+    align-items: center;
+}
+.icon24mob{
+    display: none;
+}
+
+h5{
+    padding-left: 15px;
+    font-family: "LXGW WenKai TC", cursive;
+    color: aliceblue;
+    padding-top: 20px;
+    font-size: 1.3rem;
+    line-height: 1.3;
+}
+.selfintroparagraph14mob{
+    display: none;
+}
+.webintro{
+    width: 100%;
+    color: aliceblue;
+    font-family: "LXGW WenKai TC", cursive;
+    padding-top: 25px;
+    font-size: 1.3rem;
+    line-height: 1.3;
+    padding-bottom: 5px;
+}
+.webintro4mob{
+    display: none;
+    width: 100%;
+    color: aliceblue;
+    font-family: "LXGW WenKai TC", cursive;
+    padding-top: 25px;
+    font-size: 0.5rem;
+    line-height: 1.3;
+    padding-bottom: 5px;
+}
+footer{
+    font-family: "Yuji Mai", serif;
+    color: aliceblue;
+    text-align: center;
+    font-size: 0.625rem;
+}
+.mobilenav{
+    display: none;
+}
+@media screen and 
+(max-width: 400px){
+    header{
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        
+    }
+    h1 {
+        display: flex;
+        justify-content: center; /* 確保手機螢幕時居中 */
+    }
+    
+    h1 img {
+        max-width: 80%; /* 圖片縮小以適應小螢幕 */
+        height: auto;
+       
+    }
+    .myname{
+        flex-direction: column;
+    }
+    hr{
+        text-align: center;
+    }
+    .navbutton{
+        display: none;
+    }
+    .mobwrapper{
+        display: block;
+    }
+    .burgermenu{
+        padding-top: 10px;
+    }
+    .mobnav{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    .myname{
+        flex-direction: column;
+    }
+    h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    h4{
+        font-size: 1rem;
+        padding-top: 0;
+        padding-left: 5px;
+    }
+    .small{
+        flex-direction: row;
+        justify-content: center;
+    }
+    .myphoto{
+        display: none;
+    }
+    .myphoto4mobile{
+        display: flex;
+    }
+    .icon2{
+        display: none;
+    }
+    .selfintroparagraph1{
+        display: none;
+    }
+    .selfintroparagraph14mob{
+        display: block;
+        margin-top: -10px;
+    }
+    h5{
+        font-size: 0.5rem;
+        line-height: 1.5;
+        padding-left: 0;
+    }
+    .icon24mob{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .webintro{
+        display: none;
+    }
+    .webintro4mob{
+        display: block;
+        line-height: 1.5;
+        padding-bottom: 20px;
+    }
+    .center{
+        text-align: center;
+    }
+    footer{
+        font-size: 0.4rem;
+    }
+    .mobnav .mobnavhead:hover{
+        color: burlywood;
+    }
+}
+
+.works{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.project1{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.project14mob{
+    display: none;
+}
+.project24mob{
+    display: none;
+}
+.project34mob{
+    display: none;
+}
+.text1 .text2 .text3{
+    flex: 1;
+}
+.video1{
+    flex: 1;
+}
+.video1 iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    height: 100%;
+    border: none;
+}
+.photo1{
+    flex: 1;
+    align-items: end;
+}
+.date{
+    font-family: "Noto Serif HK", serif;
+    font-size: 2.5rem;
+    color: aliceblue;
+}
+.tools{
+    font-family: "Noto Serif HK", serif;
+    font-size: 1.3rem;
+    color: aliceblue;
+    padding-top: 10px;
+}
+.describe{
+    font-family: "LXGW WenKai TC", cursive;
+    font-size: 0.75rem;
+    line-height: 1.3;
+    color: aliceblue;
+    padding-top: 15px;
+}
+.workparagraph1{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+.workname1{
+    font-family: "Noto Serif HK", serif;
+    font-size: 3rem;
+    color: aliceblue;
+    margin-right: -30px;
+    margin-left: 20px;
+}
+.workname14mob{
+    font-family: "Noto Serif HK", serif;
+    font-size: 1rem;
+    color: aliceblue;
+}
+.date4mob{
+    font-family: "Noto Serif HK", serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: aliceblue;
+    padding-left: 10px;
+}
+.project2{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.workname2{
+    font-family: "Noto Serif KR", serif;
+    font-size: 4.5rem;
+    margin-left: -10px;
+    margin-right: 20px;
+    text-align: center;
+    padding-top: 20px;
+    color: aliceblue;
+}
+span{
+    font-family: "Noto Serif KR", serif;
+    font-size: 0.75rem;
+}
+.workparagraph2{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+.project3{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+.workparagraph3{
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+}
+.right3{
+    display: flex;
+    flex-direction: row;
+    margin-right: -5px;
+    padding-left: 20px;
+}
+h6{
+    font-family: "Noto Serif HK", serif;
+    font-size: 3rem;
+    color: aliceblue;
+}
+@media screen and 
+(max-width: 400px){
+    .project1{
+        display: none;
+    }
+    .project14mob{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .thefirstline{
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        text-align: center;
+        justify-content: center;
+    }
+    .workname14mob{
+        display: block;
+        padding-top: 5px;
+    }
+    .date4mob{
+        display: block;
+        padding-top: 5px;
+    }
+    .project2{
+        display: none;
+    }
+    .project3{
+        display: none;
+    }
+    .tools{
+        font-size: 0.75rem;
+        padding-top: 3px;
+    }
+    .thethirdline{
+        width: 70%;
+    }
+    .describe{
+        font-size: 0.5rem;
+        padding-top: 5px;
+    }
+    .project24mob{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: -10px;
+    }
+    .workname24mob{
+        font-family: "Noto Serif KR", serif;
+        color: aliceblue;
+        font-size: 1.2rem;
+        padding-top: 5px;
+    }
+    .project34mob{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10px;
+        margin-top: -10px;
+    }
+    span{
+        font-size: 0.5rem;
+    }
+}
+
