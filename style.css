@@ -380,15 +380,14 @@ footer{
 }
 .describe{
     font-family: "LXGW WenKai TC", cursive;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     line-height: 1.3;
     color: aliceblue;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 .workparagraph1{
     display: flex;
     flex-direction: row;
-    padding-top: 10px;
 }
 .workname1{
     font-family: "Noto Serif HK", serif;
@@ -396,6 +395,7 @@ footer{
     color: aliceblue;
     margin-right: -30px;
     margin-left: 20px;
+    padding-top: 10px;
 }
 .workname14mob{
     font-family: "Noto Serif HK", serif;
@@ -420,14 +420,14 @@ footer{
     margin-left: -10px;
     margin-right: 20px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 30px;
     color: aliceblue;
 }
 .workname3{
     font-family: "Noto Serif HK", serif;
     font-size: 3.5rem;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 50px;
     margin-right: -10px;
     color: aliceblue;
     margin-left: 20px;
@@ -439,7 +439,6 @@ span{
 .workparagraph2{
     display: flex;
     flex-direction: row;
-    padding-top: 10px;
 }
 .project3{
     display: flex;
@@ -449,12 +448,12 @@ span{
 .workparagraph3{
     display: flex;
     flex-direction: row;
-    padding-top: 10px;
 }
 .right3{
     display: flex;
     flex-direction: row;
     padding-right: 20px;
+    padding-top: 20px;
 }
 h6{
     font-family: "Noto Serif HK", serif;
@@ -540,4 +539,90 @@ h6{
         font-size: 0.5rem;
     }
 }
+
+.container2{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+h7{
+    padding-top: 20px;
+    font-family: "Noto Serif HK", serif;
+    font-size: 3.5rem;
+    color: aliceblue;
+    text-align: left;
+    text-decoration: underline;
+}
+.h8{
+    font-family: "LXGW WenKai TC", cursive;
+    font-size: 1.5rem;
+    line-height: 1.3;
+    color: aliceblue;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.cardsection1{
+    padding-top: 30px;
+    justify-content: center;
+    gap: 50px;
+}
+.cardsection2{
+    padding-top: 20px;
+    justify-content: center;
+    gap: 50px;
+}
+.cardsection3{
+    padding-top: 20px;
+    justify-content: center;
+    gap: 50px;
+    padding-bottom: 30px;
+}
+.card {
+    height: auto;
+    width: 20rem;
+    overflow: hidden; /* 超出部分隱藏 */
+    position: relative;
+  }
+  
+  /* 設定圖片樣式 */
+  .card-img-top {
+    width: 100%; /* 圖片寬度填滿卡片 */
+    height: 12rem; /* 固定圖片高度 */
+    object-fit: cover; /* 確保圖片填滿並裁切 */
+  }
+
+  /* 半透明黑色圖層 */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明黑色 */
+    color: white; /* 文字顏色為白色 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* 預設隱藏 */
+    transition: opacity 0.3s ease; /* 滑鼠移入時的過渡效果 */
+  }
+  
+  /* 滑鼠移入顯示黑色圖層 */
+  .card:hover .overlay {
+    opacity: 1;
+  }
+  
+  /* 描述文字樣式 */
+  .text {
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    text-align: center;
+    font-family: "Noto Serif HK", serif;
+    font-size: 2.5rem;
+  }
 
