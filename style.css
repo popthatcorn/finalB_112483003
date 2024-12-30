@@ -4,16 +4,7 @@ body{
     background-position: center;
 }
 .container{
-    width:80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.container2{
-    width: 90%;
+    width:90%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -32,7 +23,7 @@ h1 img{
 nav{
     text-align: right;
     display: flex;
-    justify-content: flex-end;
+    justify-content:end;
 }
 .navhead{
     font-family: "Roboto", sans-serif;
@@ -65,9 +56,8 @@ nav{
     position: absolute;
     z-index: 99;
     padding-top: 20px;
-    padding-right: 10px;
     padding-bottom: 30px;
-    margin-left: -10px;
+    padding-left:12px ;
 }
 .navbutton:hover .dropdownmenu{
     display: block;
@@ -100,14 +90,31 @@ nav{
 .button2{
     font-family: "Noto Serif KR", serif;
     text-align: center;
-    padding-left: 42px;
-    padding-right: 42px;
+    /* padding-left: 42px;
+    padding-right: 42px; */
     text-wrap: nowrap;
     padding-bottom: 10px;
     display: flex;
     justify-content: center;
 }
 .button3{
+    font-family: "Noto Serif HK", serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    /* margin-left: 16.5px;
+    margin-right: 16.5px; */
+    text-wrap: nowrap;
+}
+.button4{
+    font-family: "Noto Serif HK", serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+.button5{
     font-family: "Noto Serif HK", serif;
     text-align: center;
     display: flex;
@@ -416,6 +423,15 @@ footer{
     padding-top: 20px;
     color: aliceblue;
 }
+.workname3{
+    font-family: "Noto Serif HK", serif;
+    font-size: 3.5rem;
+    text-align: center;
+    padding-top: 20px;
+    margin-right: -10px;
+    color: aliceblue;
+    margin-left: 20px;
+}
 span{
     font-family: "Noto Serif KR", serif;
     font-size: 0.75rem;
@@ -429,7 +445,6 @@ span{
     display: flex;
     flex-direction: row;
     gap: 30px;
-    padding-bottom: 30px;
 }
 .workparagraph3{
     display: flex;
@@ -439,13 +454,23 @@ span{
 .right3{
     display: flex;
     flex-direction: row;
-    margin-right: -5px;
-    padding-left: 20px;
+    padding-right: 20px;
 }
 h6{
     font-family: "Noto Serif HK", serif;
     font-size: 3rem;
     color: aliceblue;
+}
+.project4{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.project5{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-bottom: 30px;
 }
 @media screen and 
 (max-width: 400px){
