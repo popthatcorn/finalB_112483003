@@ -2,6 +2,7 @@ body{
     background-color: #3a3c26;
     background-size: cover;
     background-position: center;
+    box-sizing: border-box; /* 確保 padding 不影響寬度計算 */
 }
 .container{
     width:90%;
